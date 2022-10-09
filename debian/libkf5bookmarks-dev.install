@@ -1,0 +1,5 @@
+usr/include/KF5/KBookmarks/
+usr/include/KF5/kbookmarks_version.h
+usr/lib/*/cmake/KF5Bookmarks/
+usr/lib/*/libKF5Bookmarks.so
+usr/lib/*/qt5/mkspecs/modules/qt_KBookmarks.pri
