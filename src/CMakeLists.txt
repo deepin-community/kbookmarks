@@ -70,8 +70,14 @@ target_link_libraries(KF5Bookmarks PRIVATE
     KF5::Codecs # for KCharsets
     KF5::ConfigCore # for KConfigGroup
     KF5::ConfigWidgets # for KStandardAction
-    KF5::XmlGui # for KActionCollection
 )
+
+if(NOT EXCLUDE_DEPRECATED_BEFORE_AND_AT STREQUAL "CURRENT" AND EXCLUDE_DEPRECATED_BEFORE_AND_AT VERSION_LESS 5.69.0)
+  target_link_libraries(KF5Bookmarks PRIVATE
+    KF5::XmlGui # for KActionCollection
+  )
+endif()
+
 if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
   target_link_libraries(KF5Bookmarks PRIVATE Qt${QT_MAJOR_VERSION}::DBus) # dbus usage in kbookmarkmanager.cpp
 else()
@@ -109,7 +115,7 @@ set(KBookmarks_HEADERS
   kbookmarkimporter_ie.h
   kbookmarkimporter_ns.h
 )
-install(TARGETS KF5Bookmarks EXPORT KF5BookmarksTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS KF5Bookmarks EXPORT KF5BookmarksTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/kbookmarks_export.h

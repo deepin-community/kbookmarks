@@ -44,9 +44,9 @@ Copyright: 2002-2003, Alexander Kellett <lypanov@kde.org>
            1998-1999, Torben Weis <weis@kde.org>
 License: LGPL-2+
 
-Files: po/ca/kbookmarks5_qt.po
-       po/ca@valencia/kbookmarks5_qt.po
-       po/uk/kbookmarks5_qt.po
+Files: poqm/ca/kbookmarks5_qt.po
+       poqm/ca@valencia/kbookmarks5_qt.po
+       poqm/uk/kbookmarks5_qt.po
 Copyright: 1998-2014, This_file_is_part_of_KDE
 License: LGPL-2.1+3+KDEeV
 
@@ -54,7 +54,7 @@ Files: tests/kbookmarkdialogtest.cpp
 Copyright: 2013, David Faure <faure+bluesystems@kde.org>
 License: LGPL-2+3+KDEeV
 
-Files: po/bg/kbookmarks5_qt.po
+Files: poqm/bg/kbookmarks5_qt.po
 Copyright: 2010, Yasen Pramatarov <yasen@lindeas.com>
            2006-2009, Zlatko Popov <zlatkopopov@fsa-bg.org>
 License: GPL
